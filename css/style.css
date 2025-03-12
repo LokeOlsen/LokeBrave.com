@@ -46,7 +46,6 @@ nav ul li a {
 }
 
 .bio-section,
-.powerlifting-section,
 .tech-section {
   position: relative;
   width: 100%;
@@ -56,7 +55,6 @@ nav ul li a {
 
 /* Video Wrapper Shared Styles */
 .bio-video-wrapper,
-.powerlifting-video-wrapper,
 .tech-video-wrapper {
   position: absolute;
   top: 0;
@@ -69,7 +67,6 @@ nav ul li a {
 
 /* Video Shared Styles */
 .bio-video,
-.powerlifting-video,
 .tech-video {
   position: absolute;
   top: 50%;
@@ -83,7 +80,6 @@ nav ul li a {
 
 /* Content Shared Styles */
 .bio-content,
-.powerlifting-content,
 .tech-content {
   position: relative;
   z-index: 2;
@@ -97,17 +93,71 @@ nav ul li a {
 }
 
 .bio-content h2,
-.powerlifting-content h2,
 .tech-content h2 {
   font-size: 4rem;
 }
 
 .bio-content p,
-.powerlifting-content p,
 .tech-content p {
   font-size: 1.5rem;
   max-width: 600px;
 }
+
+
+
+.powerlifting-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Each takes a full viewport height */
+  overflow: hidden;
+}
+
+/* Video Wrapper Shared Styles */
+.powerlifting-video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Video Shared Styles */
+.powerlifting-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Content Shared Styles */
+.powerlifting-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.powerlifting-content h2 {
+  font-size: 4rem;
+}
+
+.powerlifting-content p {
+  font-size: 1.5rem;
+  max-width: 600px;
+}
+
+
 
 
 .overlay-text {
