@@ -1,14 +1,20 @@
-// Parallax scrolling for video backgrounds
 window.addEventListener('scroll', () => {
     const parallaxSections = document.querySelectorAll('.parallax');
 
     parallaxSections.forEach(section => {
-        const speed = 0.5; // Adjust speed for parallax intensity
+        const speed = 0.5; // adjust speed as needed
         const offset = window.scrollY;
-        const video = section.querySelector('.parallax-bg');
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
 
-        if (video) {
-            video.style.transform = `translateY(${offset * speed}px)`;
+        // Only apply the effect when the section is in the viewport
+        if (offset + window.innerHeight > sectionTop && offset < sectionTop + sectionHeight) {
+            const scrollAmount = offset - sectionTop;
+            const video = section.querySelector('.parallax-bg');
+
+            if (video) {
+                video.style.transform = `translateY(${scrollAmount * speed}px)`;
+            }
         }
     });
 });
