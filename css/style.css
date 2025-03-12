@@ -56,9 +56,13 @@ nav ul li a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 120%; /* A little larger for smoother movement */
+    height: 100%; /* match the section */
     object-fit: cover;
     z-index: 1;
+
+    /* Optional - makes it stay smooth */
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .parallax-content {
@@ -69,6 +73,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
+
 
 .parallax video {
     width: 100%;
