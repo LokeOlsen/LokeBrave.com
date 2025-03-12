@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LokeBrave | Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Navigation Menu -->
     <header>
         <nav>
             <ul>
@@ -22,13 +24,41 @@
         </nav>
     </header>
 
-    <main>
+    <!-- Hero Section -->
+    <section class="hero">
         <h1>Welcome to LokeBrave.com</h1>
-    </main>
+    </section>
 
+    <!-- Bio Section -->
+    <section class="parallax bio-section">
+        <div class="overlay-text">Bio</div>
+        <video class="hover-video" muted loop preload="metadata" poster="img/bio-poster.jpg">
+            <source src="videos/bio-hover.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Powerlifting Section -->
+    <section class="parallax powerlifting-section">
+        <div class="overlay-text">Powerlifting</div>
+        <video class="hover-video" muted loop preload="metadata" poster="img/powerlifting-poster.jpg">
+            <source src="videos/powerlifting-hover.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Tech Section -->
+    <section class="parallax tech-section">
+        <div class="overlay-text">Tech</div>
+        <video class="hover-video" muted loop preload="metadata" poster="img/tech-poster.jpg">
+            <source src="videos/tech-hover.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 LokeBrave. All rights reserved.</p>
     </footer>
 
+    <!-- JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>
