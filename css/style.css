@@ -51,6 +51,25 @@ nav ul li a {
     overflow: hidden;
 }
 
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%; /* A little larger for smoother movement */
+    object-fit: cover;
+    z-index: 1;
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .parallax video {
     width: 100%;
     height: 100%;
