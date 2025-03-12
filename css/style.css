@@ -105,61 +105,6 @@ nav ul li a {
 
 
 
-.powerlifting-section {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Each takes a full viewport height */
-  overflow: hidden;
-}
-
-/* Video Wrapper Shared Styles */
-.powerlifting-video-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-/* Video Shared Styles */
-.powerlifting-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-/* Content Shared Styles */
-.powerlifting-content {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
-
-.powerlifting-content h2 {
-  font-size: 4rem;
-}
-
-.powerlifting-content p {
-  font-size: 1.5rem;
-  max-width: 600px;
-}
-
-
-
-
 .overlay-text {
     position: absolute;
     top: 50%;
