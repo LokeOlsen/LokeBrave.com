@@ -13,23 +13,30 @@ body {
 
 /* Navigation */
 nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
+
+nav ul li a:hover {
+  color: #888;
+}
+
 
 /* Hero Section */
 .hero-section {
