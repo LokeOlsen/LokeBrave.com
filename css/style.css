@@ -417,6 +417,15 @@ nav ul li a:hover {
   scroll-snap-stop: always; /* optional, makes it a bit snappier */
 }
 
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
 
 .overlay-text {
     position: absolute;
