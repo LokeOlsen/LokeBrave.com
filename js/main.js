@@ -17,4 +17,18 @@ window.addEventListener('scroll', () => {
             }
         }
     });
+
+    const prVideos = document.querySelectorAll('.pr-video');
+
+prVideos.forEach(video => {
+  video.addEventListener('mouseenter', () => {
+    video.play();
+  });
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0; // Reset to start frame
+  });
+});
+
+    
 });
