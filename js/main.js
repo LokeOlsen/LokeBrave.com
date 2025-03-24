@@ -1,9 +1,5 @@
 window.addEventListener('scroll', () => {
     const parallaxSections = document.querySelectorAll('.parallax');
-    const popup = document.getElementById('lift-popup');
-    const popupVideo = document.getElementById('popup-video');
-    const liftCells = document.querySelectorAll('[data-video]');
-
     
     parallaxSections.forEach(section => {
         const speed = 0.5; // adjust speed as needed
@@ -35,6 +31,10 @@ prVideos.forEach(video => {
 });
 
 
+const popup = document.getElementById('lift-popup');
+const popupVideo = document.getElementById('popup-video');
+const liftCells = document.querySelectorAll('[data-video]');
+
 liftCells.forEach(cell => {
   cell.addEventListener('mouseenter', () => {
     const videoSrc = cell.getAttribute('data-video');
@@ -57,5 +57,6 @@ liftCells.forEach(cell => {
     popup.style.display = 'none';
   });
 });
+
     
 });
