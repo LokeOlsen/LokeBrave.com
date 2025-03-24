@@ -35,17 +35,20 @@ prVideos.forEach(video => {
 });
 
 
-    liftCells.forEach(cell => {
-  cell.addEventListener('mouseenter', (e) => {
+liftCells.forEach(cell => {
+  cell.addEventListener('mouseenter', () => {
     const videoSrc = cell.getAttribute('data-video');
     popupVideo.src = videoSrc;
     popup.style.display = 'block';
     popupVideo.play();
-  });
 
-  cell.addEventListener('mousemove', (e) => {
-    popup.style.left = (e.pageX + 20) + 'px';
-    popup.style.top = (e.pageY - 100) + 'px';
+    // Get position of the cell
+    const rect = cell.getBoundingClientRect();
+
+    // Position the popup above the cell
+    popup.style.position = 'absolute';
+    popup.style.left = rect.left + window.scrollX + 'px';
+    popup.style.top = rect.top + window.scrollY + 'px';
   });
 
   cell.addEventListener('mouseleave', () => {
@@ -54,6 +57,5 @@ prVideos.forEach(video => {
     popup.style.display = 'none';
   });
 });
-    
     
 });
