@@ -504,8 +504,71 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.powerlifting-meets {
+  padding: 100px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.powerlifting-meets h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.meet-table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+.meet-table th, .meet-table td {
+  border: 1px solid #555;
+  padding: 15px;
+}
+
+.meet-table th {
+  background-color: #222;
+}
+
+.meet-table tr:nth-child(even) {
+  background-color: #333;
+}
 
 
+.powerlifting-gallery {
+  padding: 100px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.powerlifting-gallery h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border: 2px solid #fff;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
 
 
 
