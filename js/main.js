@@ -47,8 +47,8 @@ liftCells.forEach(cell => {
 
     // Position the popup above the cell
     popup.style.position = 'absolute';
-    popup.style.left = rect.left + window.scrollX + 'px';
-    popup.style.top = rect.top + window.scrollY + 'px';
+    popup.style.left = rect.left + rect.width / 2 + window.scrollX + 'px';
+    popup.style.top = rect.top + rect.height / 2 + window.scrollY + 'px';
   });
 
   cell.addEventListener('mouseleave', () => {
