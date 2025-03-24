@@ -2,44 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LokeBrave | Powerlifting</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Powerlifting | LokeBrave</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+
+  <!-- NAVIGATION (shared across pages) -->
   <header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="tech.html">Tech</a></li>
-        <li><a href="powerlifting.html">Powerlifting</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="golf.html">Golf</a></li>
-        <li><a href="esports.html">E-Sport</a></li>
-        <li><a href="rockskipping.html">Rock Skipping</a></li>
-      </ul>
+      <!-- Your nav links -->
     </nav>
   </header>
 
-  <main>
-    <section class="page-section">
-      <h1>Powerlifting</h1>
-      <p>My powerlifting journey, accomplishments, and PRs.</p>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="powerlifting-hero">
+    <h1>Powerlifting</h1>
+  </section>
 
-   <section class="powerlifting-story">
-  <h2>My Powerlifting Story</h2>
-  <p>
-    I started powerlifting in [year]... (we can fill in more when you’re ready!). It’s been a journey of discipline and strength, chasing PRs and crushing meets.  
-  </p>
-</section>
+  <!-- STEP 1: STORY SECTION -->
+  <section class="powerlifting-story">
+    <h2>My Powerlifting Story</h2>
+    <p>
+      I started powerlifting in [year]...
+    </p>
+  </section>
 
-  </main>
+  <!-- STEP 2: PR SHOWCASE SECTION GOES HERE -->
+  <section class="pr-showcase">
+    <h2>My PR Lifts</h2>
+    <div class="pr-container">
+      <div class="pr-item">
+        <video class="pr-video" poster="img/squat-poster.jpg" muted loop preload="none">
+          <source src="videos/squat-pr.mp4" type="video/mp4">
+        </video>
+        <h3>Squat PR</h3>
+      </div>
 
+      <div class="pr-item">
+        <video class="pr-video" poster="img/bench-poster.jpg" muted loop preload="none">
+          <source src="videos/bench-pr.mp4" type="video/mp4">
+        </video>
+        <h3>Bench PR</h3>
+      </div>
+
+      <div class="pr-item">
+        <video class="pr-video" poster="img/deadlift-poster.jpg" muted loop preload="none">
+          <source src="videos/deadlift-pr.mp4" type="video/mp4">
+        </video>
+        <h3>Deadlift PR</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT SECTIONS -->
+  <!-- Meets List, Gallery, etc. -->
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2024 LokeBrave. All rights reserved.</p>
+    <!-- Your footer content -->
   </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
