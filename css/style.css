@@ -551,6 +551,22 @@ nav ul li a:hover {
   background-color: #333;
 }
 
+.lift-popup {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  width: 300px;
+  border: 2px solid #fff;
+  background: #000;
+  box-shadow: 0 0 10px #000;
+  pointer-events: none;
+}
+
+.lift-popup video {
+  width: 100%;
+  height: auto;
+}
+
 
 
 .powerlifting-gallery {
