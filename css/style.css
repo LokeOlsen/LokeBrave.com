@@ -560,7 +560,7 @@ nav ul li a:hover {
   background: #000;
   box-shadow: 0 0 10px #000;
   pointer-events: none;
-  transform: translateY(-100%); /* position above the cell */
+  transform: translate(-50%, -50%); /* CENTER on the anchor point */
 }
 
 .lift-popup video {
