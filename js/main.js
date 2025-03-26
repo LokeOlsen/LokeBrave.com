@@ -39,7 +39,8 @@ liftCells.forEach(cell => {
   cell.addEventListener('mouseenter', () => {
     const videoSrc = cell.getAttribute('data-video');
     popupVideo.src = videoSrc;
-    popup.style.display = 'block';
+    popup.style.opacity = '1';
+    popup.style.visibility = 'visible';
     popupVideo.play();
 
     // Get position of the cell
@@ -58,7 +59,10 @@ liftCells.forEach(cell => {
   cell.addEventListener('mouseleave', () => {
     popupVideo.pause();
     popupVideo.currentTime = 0;
-    popup.style.display = 'none';
+    popup.style.opacity = '0';
+    popup.style.visibility = 'hidden';
+    popupVideo.pause();
+    popupVideo.currentTime = 0;
   });
 });
 
