@@ -1,5 +1,9 @@
 window.addEventListener('scroll', () => {
     const parallaxSections = document.querySelectorAll('.parallax');
+
+    window.addEventListener('mousemove', () => {
+    document.body.classList.add('user-activated');
+    }, { once: true });
     
     parallaxSections.forEach(section => {
         const speed = 0.5; // adjust speed as needed
