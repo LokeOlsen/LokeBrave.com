@@ -555,7 +555,7 @@ nav ul li a:hover {
   position: absolute; /* not fixed anymore */
   display: none;
   z-index: 9999;
-  width: 400px; /* made larger */
+  width: 700px; /* made larger */
   border: 2px solid #fff;
   background: #000;
   box-shadow: 0 0 10px #000;
